@@ -22,7 +22,7 @@ Para mas detallse de lo que Alexa self-hosted otorga, abrir [esta pagina](https:
 7. Elije **Alexa-Hosted** como metodo para alojar tu Alexa Skill.  Selecciona **Crear Skill**.
 
 8. **Crear el modelo de Interaccion para tu Skill**
-	1. En el menu de la izquiera selecciona la opcion de **JSON Editor** dentro de **Interaction Model**. Reemplaza el contenido existente por el contenido en el archivo esp.json [Interaction Model](../models). Click en **Save Model**.
+	1. En el menu de la izquiera selecciona la opcion de **JSON Editor** dentro de **Interaction Model**. Reemplaza el contenido existente por el contenido en el archivo esp.json [Interaction Model](/models/esp.json). Click en **Save Model**.
     2. Si quieres cambiar el nombre de invocacion de tu Skill, selecciona **Invocation** y modifica el **Skill Invocation Name**. 
     3. Click en "Build Model".
     

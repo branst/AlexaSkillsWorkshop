@@ -53,4 +53,40 @@ Hasta ahora hemos creado un modelo y hecho deploy del codigo. Tu Skill ya esta l
 	1. **Escribe** "Abrir" seguido del nombre de invocacion antes elegido. Por ejemplo, "Abrir curiosidades del espacio".
 	2. **Usando tu voz** selecciona y apreta el microfono y di: "Abrir" seguido del nombre de invocacion de tu skill.
 	3. **Si olvidaste el nombre de invocacion** de tu skill, podes ir a la pestaña de **Build** py navegar a **Invocation** para revisarlo.
+	
+
+## Agregar otro idioma
+
+1.  Dentro de la skill ir al menu de Build. Una vez en el seleccionar el drop de idioma donde dice 'Spanish (MX)' y seleccionar 'Language Settings'.
+
+2. Hacer click en 'Add new language' y luego agregar Ingles (English-US) y hacer click en 'Save'.
+
+3. Volver al menu principal de 'Build'
+
+4. Seleccionar el nuevo idioma en el selector: 'English US'.
+
+5. Repetir los pasos para agregar el modelo en ingles:
+	1. En el menu de la izquiera selecciona la opcion de **JSON Editor** dentro de **Interaction Model**. Reemplaza el contenido existente por el contenido en el archivo [eng.json](/models/eng.json). Click en **Save Model**.
+    2. Si quieres cambiar el nombre de invocacion de tu Skill, selecciona **Invocation** y modifica el **Skill Invocation Name**. 
+    3. Click en "Build Model".
+    
+6. Ya podemos volver a la pestaña de Test y probar la Skill en el nuevo idioma.
+
+
+## Modificar el código
+
+### Multiples interacciones
+
+1. Seleccionar la pestaña de 'Code'.
+2. Localizar la linea de codigo (linea 44): '// .reprompt(requestAttributes.t('HELP_REPROMPT'))' y remover los '//'.
+
+Ahora vamos a poder volver a interactuar con nuestra skill repetidas veces.
+
+### Audio customizado
+
+1. Localizar la linea numero 262 que contiene un listado de datos.
+2. Reemplazar `'Un año en Mercurio es de solo 88 días',` por: `'<amazon:effect name="whispered">Un año en Mercurio es de solo 88 días</amazon:effect>',`
+
+Ahora Alexa nos va a susurrar las respuestas. Podemos modificar y agregar nuevas opciones.
+
 

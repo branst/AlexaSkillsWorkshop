@@ -6,7 +6,7 @@ Con una skill de Alexa Self-Hosted, podes construir, editar, y publicar una skil
 Alexa Skills incluye un editor de codigo para editar, manejar y hacer deploy de tus skills.
 Para mas detallse de lo que Alexa self-hosted otorga, abrir [esta pagina](https://developer.amazon.com/docs/hosted-skills/build-a-skill-end-to-end-using-an-alexa-hosted-skill.html) en una nueva pestaña.
 
-### Pasos para crear una Skill y cargar un modelo
+## Crear una Skill y cargar un modelo
 1.  **Ir a [Amazon Developer Portal](http://developer.amazon.com/alexa?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-1&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-1_Convert_WW_beginnersdevs&sc_segment=beginnersdevs).  Arriba a la derecha hacer click en "Sign In".**
 
 2.  Una vez loggeado, haz click en el link de **Skills**.
@@ -27,7 +27,7 @@ Para mas detallse de lo que Alexa self-hosted otorga, abrir [esta pagina](https:
     3. Click en "Build Model".
     
 
-### Hacer deploy del codigo de la Skill
+## Hacer deploy del codigo de la Skill
 
 1.  Adentro de tu Skill hace click en la pestaña de Codigo.
 Deberias ver a la izquiera una carpeta y sus archivos, hacer click en **index.js** para abirlo. Este archivo es el codigo de tu Alexa Skill.
@@ -41,7 +41,7 @@ Deberias ver a la izquiera una carpeta y sus archivos, hacer click en **index.js
 6. Hacer click en Save y luego hacer Deploy.
 
 
-## Testing tu Alexa Skill
+## Probando tu Alexa Skill
 
 Hasta ahora hemos creado un modelo y hecho deploy del codigo. Tu Skill ya esta lista para ser probada.
 

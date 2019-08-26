@@ -78,7 +78,7 @@ Hasta ahora hemos creado un modelo y hecho deploy del codigo. Tu Skill ya esta l
 ### Multiples interacciones
 
 1. Seleccionar la pestaña de 'Code'.
-2. Localizar la linea de codigo (linea 44): '// .reprompt(requestAttributes.t('HELP_REPROMPT'))' y remover los '//'.
+2. Localizar la linea de codigo (linea 44): `// .reprompt(requestAttributes.t('HELP_REPROMPT'))` y remover los '//'. Quedaria: `.reprompt(requestAttributes.t('HELP_REPROMPT'))`
 
 Ahora vamos a poder volver a interactuar con nuestra skill repetidas veces.
 

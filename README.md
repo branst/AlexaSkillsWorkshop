@@ -32,11 +32,11 @@ Para mas detallse de lo que Alexa self-hosted otorga, abrir [esta pagina](https:
 1.  Adentro de tu Skill hace click en la pestaña de Codigo.
 Deberias ver a la izquiera una carpeta y sus archivos, hacer click en **index.js** para abirlo. Este archivo es el codigo de tu Alexa Skill.
 
-2. Seleccionar todo el texto existente y borrarlo. Luego reemplazar por el codigo de [/index.js](../index.js) dentro de este proyecto.
+2. Seleccionar todo el texto existente y borrarlo. Luego reemplazar por el codigo de [index.js](index.js) dentro de este proyecto.
 
 4. Hacer click en "Raw" y luego copiar el codigo. Regresar a la pantalla de Alexa Skills y pegar el contenido dentro del editor de texto.
 
-5. Repetir los mismos pasos para el archivo **package.json** Copiar los contenidos de [/package.json](../package.json), y pegarlos en el archivo package.json de la Skill.
+5. Repetir los mismos pasos para el archivo **package.json** Copiar los contenidos de [package.json](package.json), y pegarlos en el archivo package.json de la Skill.
 
 6. Hacer click en Save y luego hacer Deploy.
 

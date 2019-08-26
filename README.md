@@ -22,7 +22,7 @@ Para mas detallse de lo que Alexa self-hosted otorga, abrir [esta pagina](https:
 7. Elije **Alexa-Hosted** como metodo para alojar tu Alexa Skill.  Selecciona **Crear Skill**.
 
 8. **Crear el modelo de Interaccion para tu Skill**
-	1. En el menu de la izquiera selecciona la opcion de **JSON Editor** dentro de **Interaction Model**. Reemplaza el contenido existente por el contenido en el archivo esp.json [Interaction Model](/models/esp.json). Click en **Save Model**.
+	1. En el menu de la izquiera selecciona la opcion de **JSON Editor** dentro de **Interaction Model**. Reemplaza el contenido existente por el contenido en el archivo [esp.json](/models/esp.json). Click en **Save Model**.
     2. Si quieres cambiar el nombre de invocacion de tu Skill, selecciona **Invocation** y modifica el **Skill Invocation Name**. 
     3. Click en "Build Model".
     
@@ -41,4 +41,16 @@ Deberias ver a la izquiera una carpeta y sus archivos, hacer click en **index.js
 6. Hacer click en Save y luego hacer Deploy.
 
 
+## Testing tu Alexa Skill
+
+Hasta ahora hemos creado un modelo y hecho deploy del codigo. Tu Skill ya esta lista para ser probada.
+
+1. Accede al  **Alexa Simulator**, desde la pestaña de **Test** en el menu de navegacion superior. 
+
+2. Hay una opcion llamada "Skill testing is enabled in:", que tiene seleccionada la opcion 'Off' alternarla a 'Development'.
+
+3. Validar que la skill funcione correctamente, invoca tu skill desde el **Alexa Simulator**. Podes escribir o mantener seleccionado el icono de microfono y luego hablar
+	1. **Escribe** "Abrir" seguido del nombre de invocacion antes elegido. Por ejemplo, "Abrir curiosidades del espacio".
+	2. **Usando tu voz** selecciona y apreta el microfono y di: "Abrir" seguido del nombre de invocacion de tu skill.
+	3. **Si olvidaste el nombre de invocacion** de tu skill, podes ir a la pestaña de **Build** py navegar a **Invocation** para revisarlo.
 

@@ -93,6 +93,11 @@ Ahora Alexa nos va a susurrar las respuestas. Podemos modificar y agregar nuevas
 
 Podemos hacer que Alexa nos de un mensaje de bienvenida cada vez que invocamos nuestra Skill para ello:
 
+1. Ir a la pestaña de codigo y reemplazar todo el codigo por el que esta ubicado aqui [indexFinished.js](indexFinished.js).
+2. Hacer click en Save y Deploy.
+3. Ir a la pestaña de Test. Ahora podemos invocar la Skill y vamos a recibir el mensaje de bienvenida. Una vez recibido el mensaje, le podemos pedir una curiosidad.
+
+
 
 
 

@@ -5,11 +5,19 @@
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
-          "samples": []
+          "samples": [
+            "close",
+            "exit",
+            "close skill"
+          ]
         },
         {
           "name": "AMAZON.HelpIntent",
-          "samples": []
+          "samples": [
+            "close",
+            "exit",
+            "close skill"
+          ]
         },
         {
           "name": "AMAZON.StopIntent",

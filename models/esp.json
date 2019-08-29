@@ -5,7 +5,11 @@
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
-          "samples": []
+          "samples": [
+            "cancelar",
+            "salir",
+            "cerrar skill"
+          ]
         },
         {
           "name": "AMAZON.HelpIntent",
@@ -13,7 +17,11 @@
         },
         {
           "name": "AMAZON.StopIntent",
-          "samples": []
+          "samples": [
+            "cancelar",
+            "salir",
+            "cerrar skill"
+          ]
         },
         {
           "name": "GetNewFactIntent",

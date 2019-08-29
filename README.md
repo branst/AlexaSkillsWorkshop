@@ -55,7 +55,9 @@ Hasta ahora hemos creado un modelo y hecho deploy del código. Tu Skill ya está
 	3. **Si olvidaste el nombre de invocación** de tu skill, podes ir a la pestaña de **Build** y navegar a **Invocation** para revisarlo.
 	
 
-## Agregar otro idioma
+## Extras
+
+### Agregar otro idioma
 
 1.  Dentro de la skill ir al menú de Build. Una vez en él, seleccionar el drop de idioma donde dice "Spanish (MX)" y seleccionar "Language Settings".
 
@@ -71,9 +73,6 @@ Hasta ahora hemos creado un modelo y hecho deploy del código. Tu Skill ya está
     3. Click en "Build Model".
     
 6. Ya podemos volver a la pestaña de Test y probar la Skill en el nuevo idioma.
-
-
-## Modificar el código
 
 ### Multiples interacciones
 
@@ -97,7 +96,7 @@ Podemos hacer que Alexa nos lea un mensaje de bienvenida cada vez que invocamos 
 2. Hacer click en "Save" y "Deploy".
 3. Ir a la pestaña de "Test". Ahora podemos invocar la Skill y vamos a recibir el mensaje de bienvenida. Una vez recibido el mensaje, le podemos pedir una curiosidad, luego podremos volver a realizar la misma accion u otras.
 
-### Integrar con servicios de Terceros
+### Integrar con servicios de terceros
 
 Podemos hacer que Alexa se integre con otros sitios, por ejemplo, el precios de acciones:
 

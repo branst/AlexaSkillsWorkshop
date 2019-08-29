@@ -97,6 +97,14 @@ Podemos hacer que Alexa nos lea un mensaje de bienvenida cada vez que invocamos 
 2. Hacer click en "Save" y "Deploy".
 3. Ir a la pestaña de "Test". Ahora podemos invocar la Skill y vamos a recibir el mensaje de bienvenida. Una vez recibido el mensaje, le podemos pedir una curiosidad, luego podremos volver a realizar la misma accion u otras.
 
+### Integrar con servicios de Terceros
+
+Podemos hacer que Alexa se integre con otros sitios, por ejemplo, el precios de acciones:
+
+1. Ir a la pestaña de "Code" y reemplazar el código, ubicar la linea número 6 `const apiKey = "";` y reemplazar las "" por un valor proporcionado.
+2. Hacer click en "Save" y "Deploy".
+3. Ir a la pestaña de "Test". Ahora podemos invocar la Skill y vamos a recibir el mensaje de bienvenida. Una vez recibido el mensaje, le vamos a poder solicitar el precios de las acciones, diciendo 'dime el precio de mis acciones'.
+
 
 
 

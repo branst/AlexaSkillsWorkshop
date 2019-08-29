@@ -1,6 +1,9 @@
 // sets up dependencies
 const Alexa = require('ask-sdk-core');
 const i18n = require('i18next');
+const fetch = require("node-fetch");
+
+const apiKey = "";
 
 // core functionality for fact skill
 const GetNewFactHandler = {
@@ -26,6 +29,45 @@ const GetNewFactHandler = {
       .getResponse();
   },
 };
+
+
+
+const GetStockPriceHandler = {
+  canHandle(handlerInput) {
+    const request = handlerInput.requestEnvelope.request;
+    // checks request type
+    return (request.type === 'IntentRequest'
+        && request.intent.name === 'GetStockPriceIntent');
+  },
+  handle : async handlerInput =>  {
+    const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
+    var stockPrices = "";
+
+    const url = `https://api.worldtradingdata.com/api/v1/stock?symbol=AAPL,AMZN,MSFT&api_token=${apiKey}`;
+
+    const getData = async url => {
+      try {
+        const response = await fetch(url);
+        const json = await response.json();
+        stockPrices = `Apple: ${json.data[0].price} USD <break time="1s"/> Amazon: ${json.data[1].price} USD <break time="1s"/> Microsoft: ${json.data[2].price} USD <break time="1s"/>`;
+        console.log(stockPrices);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    await getData(url);
+
+    const speakOutput = requestAttributes.t('GET_STOCKS_MESSAGE') + stockPrices;
+    console.log(speakOutput);
+
+    return handlerInput.responseBuilder
+      .speak(speakOutput)
+      .reprompt(requestAttributes.t('HELP_REPROMPT'))
+      .withSimpleCard(requestAttributes.t('SKILL_NAME'), 'Prices')
+      .getResponse();
+  },
+};
+
 
 const LaunchRequestHandler = {
     canHandle(handlerInput) {
@@ -149,6 +191,7 @@ const skillBuilder = Alexa.SkillBuilders.custom();
 
 exports.handler = skillBuilder
   .addRequestHandlers(
+    GetStockPriceHandler,
     LaunchRequestHandler,
     GetNewFactHandler,
     HelpHandler,
@@ -170,6 +213,7 @@ const enData = {
   translation: {
     SKILL_NAME: 'Space Facts',
     WELCOME: 'Welcome to Space Facts, ask me for one',
+    GET_STOCKS_MESSAGE: 'Here are your stock prices: ',
     GET_FACT_MESSAGE: 'Here\'s your fact: ',
     HELP_MESSAGE: 'You can say tell me a space fact, or, you can say exit... What can I help you with?',
     HELP_REPROMPT: 'What can I help you with?',
@@ -192,6 +236,7 @@ const esData = {
   translation: {
     WELCOME: 'Bienvenido a curiosidades del espacio, pídime una',
     SKILL_NAME: 'Curiosidades del Espacio',
+    GET_STOCKS_MESSAGE: 'Aqui estan los precios de tus acciones: ',
     GET_FACT_MESSAGE: 'Aquí está tu curiosidad: ',
     HELP_MESSAGE: 'Puedes decir dime una curiosidad del espacio o puedes decir salir... Cómo te puedo ayudar?',
     HELP_REPROMPT: 'Como te puedo ayudar?',

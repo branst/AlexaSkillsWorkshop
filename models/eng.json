@@ -26,6 +26,17 @@
             "give me data about space"
           ],
           "slots": []
+        },
+        {
+          "name": "GetStockPriceIntent",
+          "samples": [
+            "give stock prices",
+            "tell me tech stock prices",
+            "give stocks",
+            "tell me stock prices",
+            "what are the prices of the stocks"
+          ],
+          "slots": []
         }
       ]
     }

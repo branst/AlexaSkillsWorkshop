@@ -31,6 +31,17 @@
             "dime una curiosidad"
           ],
           "slots": []
+        },
+        {
+          "name": "GetStockPriceIntent",
+          "samples": [
+            "dame el precio de las acciones",
+            "dime el precio de las acciones de tecnologia",
+            "dame acciones",
+            "cuentame las acciones",
+            "cuales son los precios de las acciones"
+          ],
+          "slots": []
         }
       ]
     }

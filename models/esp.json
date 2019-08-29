@@ -20,14 +20,11 @@
           "samples": [
             "un dato",
             "un dato del espacio",
-            "dime un dato",
             "dime un dato del espacio",
             "dame un dato",
             "dame otro dato",
             "dime un dato",
             "dame un dato del espacio",
-            "dime una",
-            "dime algo",
             "dime una curiosidad"
           ],
           "slots": []

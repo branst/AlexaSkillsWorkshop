@@ -9,6 +9,9 @@ Para mas detalles de lo que Alexa self-hosted puede hacer, abrir [esta pagina](h
 ## Crear una Skill y cargar un modelo
 1.  **Ir a [Amazon Developer Portal](http://developer.amazon.com/alexa?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-1&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-1_Convert_WW_beginnersdevs&sc_segment=beginnersdevs).  Arriba a la derecha hacer click en "Sign In".**
 
+![Sign In](img/1-create.1.1.png?raw=true "Sign In")
+
+
 2.  Una vez loggeado, haz click en el link de **Skills**.
 
 3.  Seleccionar **Create Skill**

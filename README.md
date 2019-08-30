@@ -11,18 +11,26 @@ Para mas detalles de lo que Alexa self-hosted puede hacer, abrir [esta pagina](h
 
 ![Sign In](img/1-create.1.1.png?raw=true "Sign In")
 
-
 2.  Una vez loggeado, haz click en el link de **Skills**.
 
+![Skills](img/1-create.2.1.png?raw=true "Skills")
+
 3.  Seleccionar **Create Skill**
+
+![Create Skill](img/1-create.3.1.png?raw=true "Create Skill")
 
 4. Darle un nombre a tu Skill. Este será el nombre con el cual los usuarios identificarán tu skill.
 
 5. Elegir Español-MX.
 
+![Create Skill](img/1-create.5.1.png?raw=true "Create Skill")
+
 6. Deja el modelo **Custom** seleccionado.
 
 7. Elige **Alexa-Hosted** como método para hospedar tu Alexa Skill. Selecciona **Create Skill**.
+
+![Create Skill](img/1-create.7.1.png?raw=true "Create Skill")
+![Create Skill](img/1-create.7.2.png?raw=true "Create Skill")
 
 8. **Crear el modelo de Interacción para tu Skill**
 	1. En el menú de la izquiera selecciona la opción de **JSON Editor** dentro de **Interaction Model**. Reemplaza el contenido existente por el contenido del archivo [esp.json](/models/esp.json). Click en **Save Model**.

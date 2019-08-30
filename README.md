@@ -38,27 +38,36 @@ Para mas detalles de lo que Alexa self-hosted puede hacer, abrir [esta pagina](h
 
 	![Create Skill](img/1-create.8.1.png?raw=true "Create Skill")
 
-    2. Si quieres cambiar el nombre de invocación de tu Skill, selecciona **Invocation** y modifica el **Skill Invocation Name**. 
-
 	![Create Skill](img/1-create.8.2.png?raw=true "Create Skill")
 
-    3. Click en "Build Model".
-	
+    2. Si quieres cambiar el nombre de invocación de tu Skill, selecciona **Invocation** y modifica el **Skill Invocation Name**. 
+
 	![Create Skill](img/1-create.8.3.png?raw=true "Create Skill")
-    
+
+    3. Click en "Build Model".
+
+	 
 
 ## Hacer deploy del código de la Skill
 
 1.  Dentro de tu Skill hace click en la pestaña de "Code".
 A tu izquierda deberías ver una carpeta y sus archivos, hacer click en **index.js** para abirlo. Este archivo es el código de tu Alexa Skill.
 
+![Create Skill](img/2-deploy.1.png?raw=true "Create Skill")
+
 2. Seleccionar todo el texto existente y borrarlo. Luego reemplazarlo por el código de [index.js](/code/index.js).
 
-4. Hacer click en "Raw" y luego copiar el código. Regresar a la pantalla de Alexa Skills y pegar el contenido dentro del editor de texto.
+3. Hacer click en "Raw" y luego copiar el código. Regresar a la pantalla de Alexa Skills y pegar el contenido dentro del editor de texto.
 
-5. Repetir los mismos pasos para el archivo **package.json** Copiar los contenidos de [package.json](/code/package.json), y pegarlos en el archivo package.json de la Skill en el editor de texto dentro de la pestaña "Code".
+![Create Skill](img/2-deploy.3.png?raw=true "Create Skill")
 
-6. Hacer click en "Save" y luego hacer "Deploy".
+4. Repetir los mismos pasos para el archivo **package.json** Copiar los contenidos de [package.json](/code/package.json), y pegarlos en el archivo package.json de la Skill en el editor de texto dentro de la pestaña "Code".
+
+![Create Skill](img/2-deploy.4.png?raw=true "Create Skill")
+
+5. Hacer click en "Save" y luego hacer "Deploy".
+
+![Create Skill](img/2-deploy.5.png?raw=true "Create Skill")
 
 
 ## Probando tu Alexa Skill
@@ -67,9 +76,14 @@ Hasta ahora hemos creado un modelo y hecho deploy del código. Tu Skill ya está
 
 1. Accede al  **Alexa Simulator**, desde la pestaña de **Test** en el menú de navegacion superior. 
 
+![Create Skill](img/3-test.1.png?raw=true "Create Skill")
+
 2. Hay una opcion llamada "Skill testing is enabled in:", que tiene seleccionada la opcion "Off" alternarla a "Development".
 
 3. Validar que la skill funcione correctamente, para ello, invoca tu skill desde el **Alexa Simulator**. Podes escribir o mantener seleccionado el ícono de micrófono y luego hablar
+
+![Create Skill](img/3-test.3.png?raw=true "Create Skill")
+
 	1. **Escribiendo** "Abrir" seguido del nombre de invocación antes elegido. Por ejemplo, "Abrir curiosidades del espacio".
 	2. **Usando tu voz** selecciona y apreta el microfono y dí: "Abrir" seguido del nombre de invocacion de tu skill.
 	3. **Si olvidaste el nombre de invocación** de tu skill, podes ir a la pestaña de **Build** y navegar a **Invocation** para revisarlo.

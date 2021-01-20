@@ -3,7 +3,7 @@ const Alexa = require('ask-sdk-core');
 const i18n = require('i18next');
 const fetch = require("node-fetch");
 
-const apiKey = "";
+const apiKey = "347d8d6264c2ab073aab6fb5189a94e6";
 
 // core functionality for fact skill
 const GetNewFactHandler = {

@@ -43,13 +43,14 @@ const GetStockPriceHandler = {
     const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
     var stockPrices = "";
 
-    const url = `https://api.worldtradingdata.com/api/v1/stock?symbol=AAPL,AMZN,MSFT&api_token=${apiKey}`;
+    const url = `http://api.marketstack.com/v1/eod?symbols=AAPL,AMZN&access_key=${apiKey}`;
 
     const getData = async url => {
       try {
         const response = await fetch(url);
         const json = await response.json();
-        stockPrices = `Apple: ${json.data[0].price} USD <break time="1s"/> Amazon: ${json.data[1].price} USD <break time="1s"/> Microsoft: ${json.data[2].price} USD <break time="1s"/>`;
+        console.log(json);
+        stockPrices = `Apple: ${json.data[0].close} USD <break time="1s"/> Amazon: ${json.data[1].close} USD <break time="1s"/>`;
         console.log(stockPrices);
       } catch (error) {
         console.log(error);
